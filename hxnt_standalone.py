@@ -278,7 +278,7 @@ def hx_failure_alert():
 
 def hx_pending_alert():
   """
-  Function to alert for successful HyperFlex Edge cluster deployment
+  Function to alert for pending-changes needed on HyperFlex Edge cluster deployment
   """
   
   # Create Email
