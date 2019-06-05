@@ -1,3 +1,5 @@
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/ugo-emekauwa/hyperflex-notification-tool)
+
 # HyperFlex Notification Tool for Cisco Intersight
 The HyperFlex Notification Tool (HXNT) provides email alert notifications on the status of Cisco HyperFlex Edge cluster deployments through Cisco Intersight.
 No longer do you have to manually check or monitor the Intersight web interface to find out the status of your deployments.
