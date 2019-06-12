@@ -13,7 +13,7 @@ HXNT will automatically provide updates on HyperFlex deployment completions, tas
 
 ## Getting Started:
 
-  1. Please ensure the above prerequistes have been met.
+  1. Please ensure the above prerequisites have been met.
   2. Download the hxnt_standalone.py file for the HyperFlex Notification Tool from here on GitHub.
   3. Create a HyperFlex cluster profile on Cisco Intersight and begin the validation and deployment.
   4. Run the hxnt_standalone.py file.
