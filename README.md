@@ -22,8 +22,8 @@ HXNT will automatically provide updates on HyperFlex deployment completions, tas
 The HyperFlex Notification Tool is completely interactive and will prompt you for the information needed to begin monitoring the status of your HyperFlex deployment.
 The HyperFlex Notification Tool can also be easily scripted if desired for scenarios where several HyperFlex clusters are being deployed simultaneously. Please see the contact information below if any help is needed or questions.
 
-### Author:
+## Author:
 Ugo Emekauwa
 
-### Contact Information:
+## Contact Information:
 uemekauw@cisco.com or uemekauwa@gmail.com
