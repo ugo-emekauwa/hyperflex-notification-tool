@@ -1,5 +1,5 @@
 """
-HyperFlex Notification Tool (HXNT), v1.0
+HyperFlex Notification Tool (HXNT), v1.1
 Author: Ugo Emekauwa
 Contact: uemekauw@cisco.com, uemekauwa@gmail.com
 Summary: The HyperFlex Notification Tool will provide email notification alerts for
@@ -9,17 +9,12 @@ Summary: The HyperFlex Notification Tool will provide email notification alerts 
 # Import needed Python modules
 import sys
 import os
-import logging
 import time
 import datetime
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from email.mime.application import MIMEApplication
-from email.utils import COMMASPACE, formatdate
-from email.mime.base import MIMEBase
-from email import encoders
-from os.path import basename
+from email.utils import formatdate
 import intersight
 from intersight.intersight_api_client import IntersightApiClient
 
@@ -29,9 +24,15 @@ date = get_date.strftime("%m/%d/%Y %H:%M:%S")
 
 # HyperFlex Edge Notification Tool Banner and Greeting
 
-print("                                   <HX Notification Tool>\n\n")
+title_text = "| HyperFlex Notification Tool |"
+title_space = "             " + title_text
+title_top_frame = "             +" + "-" * (len(title_text) - 2) + "+"
+title_side_frame = "             |" + " " * (len(title_text) -2) + "|"
+title_full_frame = [title_top_frame, title_side_frame, title_space, title_side_frame, title_top_frame]
+title = "\n".join(title_full_frame)
+print(title)
 print("Hello!\n")
-print("The HX Notification Tool (HXNT) will send email notifications \non the status of your HyperFlex Edge cluster deployment.")
+print("The HyperFlex Notification Tool (HXNT) will send email notifications \non the status of your HyperFlex Edge cluster deployment.")
 
 # Begin User Questions
 # Request user to input the Intersight API key ID
