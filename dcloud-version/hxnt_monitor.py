@@ -1,5 +1,5 @@
 """
-HyperFlex Notification Tool (HXNT) Monitor for dCloud, v1.0
+HyperFlex Notification Tool (HXNT) Monitor for dCloud, v1.1
 Author: Ugo Emekauwa
 Contact: uemekauw@cisco.com, uemekauwa@gmail.com
 Summary: The HyperFlex Notification Tool will provide email notification alerts for
@@ -10,21 +10,14 @@ Notes: A standalone version of this tool can be found on the Cisco DevNet Code E
 
 # Import needed Python modules
 import sys
-import json
-import requests
 import os
 import logging
-import time
 import datetime
 import xml.etree.ElementTree as et
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from email.mime.application import MIMEApplication
-from email.utils import COMMASPACE, formatdate
-from email.mime.base import MIMEBase
-from email import encoders
-from os.path import basename
+from email.utils import formatdate
 import intersight
 from intersight.intersight_api_client import IntersightApiClient
 
