@@ -1,5 +1,5 @@
 """
-HyperFlex Notification Tool (HXNT) Configurator for dCloud, v1.0
+HyperFlex Notification Tool (HXNT) Configurator for dCloud, v1.1
 Author: Ugo Emekauwa
 Contact: uemekauw@cisco.com, uemekauwa@gmail.com
 Summary: The HyperFlex Notification Tool will provide email notification alerts for
@@ -35,7 +35,13 @@ session_owner = session_xml.find("owner").text
 
 # HyperFlex Edge Notification Tool Banner and Greeting
 
-print("                       < HX Notification Tool for dCloud >\n\n")
+title_text = "| HyperFlex Notification Tool for dCloud |"
+title_space = "                       " + title_text
+title_top_frame = "                       +" + "-" * (len(title_text) - 2) + "+"
+title_side_frame = "                       |" + " " * (len(title_text) -2) + "|"
+title_full_frame = [title_top_frame, title_side_frame, title_space, title_side_frame, title_top_frame]
+title = "\n".join(title_full_frame)
+print(title)
 print("Hello " + session_owner + "!\n")
 print("The HX Notification Tool will send email notifications \non the status of your HyperFlex Edge cluster deployment.\n")
 hyperflex_cluster_answer = input("Please enter the name of the HyperFlex Edge cluster you are deploying: \n[dcloud-hx-edge-cluster-1]\n")
