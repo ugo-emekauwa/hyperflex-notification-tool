@@ -9,7 +9,7 @@ HXNT will automatically provide updates on HyperFlex deployment completions, tas
 ## Prerequisites:
   1. Python 3 installed, which can be downloaded from [https://www.python.org/downloads/](https://www.python.org/downloads/).
   2. The Cisco Intersight SDK for Python, which can be installed by running:
-     ```py
+     ```python
      pip install git+https://github.com/CiscoUcs/intersight-python.git
      ```
      More information on the Cisco Intersight SDK for Python can be found at [https://github.com/CiscoUcs/intersight-python](https://github.com/CiscoUcs/intersight-python).
@@ -28,7 +28,13 @@ The HyperFlex Notification Tool is completely interactive and will prompt you fo
 The HyperFlex Notification Tool can also be easily scripted if desired for scenarios where several HyperFlex clusters are being deployed simultaneously. Please see the contact information below if any help is needed or questions.
 
 ## Use Cases:
-- A modified version of the Hyperflex Notification Tool has been built for Cisco dCloud and is featured in the demonstration named **_Cisco HyperFlex Edge with Intersight v1_**, available at [https://dcloud-cms.cisco.com/demo/cisco-hyperflex-edge-with-intersight-v1](https://dcloud-cms.cisco.com/demo/cisco-hyperflex-edge-with-intersight-v1).
+A modified version of the Hyperflex Notification Tool for Cisco Intersight is featured on Cisco dCloud in the following labs:
+
+1. [_Cisco HyperFlex Edge 4.5 with Intersight v1 (All Flash, 2-Node)_](https://dcloud2-rtp.cisco.com/content/demo/760975)
+2. [_Cisco HyperFlex Edge 4.5 with Intersight v1 (Hybrid, 2-Node)_](https://dcloud2-rtp.cisco.com/content/demo/760974)
+3. [_Cisco HyperFlex Edge 4.5 with Intersight v1 (All Flash, 3-Node)_](https://dcloud-cms.cisco.com/demo/cisco-hyperflex-edge-4-5-with-intersight-v1-all-flash-3-node)
+
+Cisco dCloud is available at [https://dcloud.cisco.com](https://dcloud.cisco.com), where product demonstrations and labs can be found in the Catalog.
 
 ## Author:
 Ugo Emekauwa
